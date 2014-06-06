@@ -1,0 +1,15 @@
+= javascript_include_tag 'jquery-ui.multidatespicker.js', plugin: 'redmine_holidays_calendar'
+= javascript_include_tag 'holiday_calendar_settings', plugin: 'redmine_holidays_calendar'
+
+:javascript
+  $(document).ready(function() {
+    $(document).holidaysCalendar({
+      datesDayOff: "#{@settings['dates_day_off']}"
+    });
+  });
+
+%fieldset
+  %p
+    = content_tag(:label, l(:holidays))
+    #calendar_dates_day_off
+      %input#dates_day_off{name: 'settings[dates_day_off]', hidden: true}
