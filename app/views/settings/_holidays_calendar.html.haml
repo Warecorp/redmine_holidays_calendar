@@ -4,7 +4,7 @@
 :javascript
   $(document).ready(function() {
     $(document).holidaysCalendar({
-      datesDayOff: "#{@settings['dates_day_off']}"
+      datesDayOff: "#{@settings ? @settings['dates_day_off'] : ''}"
     });
   });
 
