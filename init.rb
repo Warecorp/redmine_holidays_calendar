@@ -12,7 +12,7 @@ Redmine::Plugin.register :redmine_holidays_calendar do
   author 'Alexander Klimenkov'
   description 'Holidays Calendar is a plugin to set a holidays / weekends date'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
+  url 'https://github.com/Warecorp/redmine_holidays_calendar'
   author_url 'https://github.com/AlexKlim'
 
   requires_redmine version_or_higher: '0.8.0'
