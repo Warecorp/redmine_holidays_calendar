@@ -2,12 +2,14 @@
   var holidaysCalendar = function($element, options) {
 
     var datesDayOff = options.datesDayOff,
+        firstDay = options.firstDay,
         $calendar = $('#calendar_dates_day_off');
 
     function init() {
 
       $calendar.multiDatesPicker({
         dateFormat: "yy-mm-dd",
+        firstDay: firstDay,
         defaultDate: new Date()
       });
 
