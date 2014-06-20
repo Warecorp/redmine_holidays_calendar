@@ -1,2 +1,3 @@
-# Plugin's routes
-# See: http://guides.rubyonrails.org/routing.html
+RedmineApp::Application.routes.draw do
+  get 'redmine_holidays_calendar/calendar' => 'holidays_calendar#calendar'
+end
