@@ -1,6 +1,6 @@
 class HolidaysCalendarController < ApplicationController
   accept_api_auth :calendar
-  before_filter :require_admin
+  before_action :require_admin
 
   def calendar
     respond_to do |format|
